@@ -1,0 +1,25 @@
+<div class="product-gallery">
+    <div class="product-gallery__slides">
+        {% for picture in images %}
+        <a class="product-gallery__slide"
+           href="{{ picture['images']['big_slick_style'] }}"
+           target="_blank">
+            <img data-lazy="{{ picture['images']['medium_slick_style'] }}"
+                 alt="{{ picture['metadata']['alt']  }}">
+        </a>
+        {% endfor %}
+    </div>
+
+    <div class="product-gallery__thumbs">
+        {% for thumb in images %}
+        <a class="product-gallery__thumb"
+           href="{{ thumb['images']['big_slick_style'] }}"
+           target="_blank">
+            <img src="{{ thumb['images']['small_slick_style'] }}"
+                 alt="{{ thumb['metadata']['alt'] }}">
+        </a>
+        {% endfor %}
+    </div>
+
+</div>
+

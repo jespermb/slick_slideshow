@@ -1,0 +1,20 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: jesperbisgaard
+ * Date: 16/06/16
+ * Time: 22:11
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function slick_slideshow_theme() {
+  return array(
+    'slick_slideshow_formatter' => array(
+      'variables' => array(
+        'images' => NULL,
+      ),
+    ),
+  );
+}

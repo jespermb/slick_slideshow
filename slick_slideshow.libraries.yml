@@ -1,0 +1,8 @@
+slick:
+  js:
+    js/slick.min.js: {}
+    js/slick.loberen.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
